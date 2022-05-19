@@ -4,12 +4,11 @@ import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-import java.time.LocalDateTime;
 
 @Data
 public class ParkingSpotDto {
 
-   @NotBlank
+    @NotBlank
     private String parkingSpotNumber;
 
     @NotBlank
@@ -24,9 +23,6 @@ public class ParkingSpotDto {
 
     @NotBlank
     private String colorCar;
-
-    @NotBlank
-    private LocalDateTime registrationDate;
 
     @NotBlank
     private String responsibleName;
